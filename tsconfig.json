@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "lib": ["ESNext", "DOM"],
+    "moduleResolution": "node",
+    "module": "es6",
+    "strict": true,
+    "target": "esnext",
+    "baseUrl": ".",
+    "typeRoots": ["./src/types"],
+    "types": ["node"],
+    "paths": {
+      "*": ["src/*"],
+      "@routes/*": ["src/routes/*"],
+      "@controllers/*": ["src/controllers/*"],
+      "@services/*": ["src/services/*"],
+      "@middleware/*": ["src/middleware/*"],
+      "@helpers/*": ["src/helpers/*"]
+    },
+  },
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "build"
+  ]
+}

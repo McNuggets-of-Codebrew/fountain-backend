@@ -1,0 +1,20 @@
+{
+  "presets": ["@babel/preset-typescript"],
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./src"],
+      "extensions": [".js", ".ts", ".json"],
+      "alias": {
+        "@routes": "./src/routes",
+        "@controllers": "./src/controllers",
+        "@services": "./src/services",
+        "@middleware": "./src/middleware",
+        "@helpers": "./src/helpers"
+      }
+    }]
+  ],
+  "sourceMaps": true,
+  "targets": {
+    "node": "current"
+  }
+}
