@@ -14,10 +14,11 @@
     "types": ["node"],
     "paths": {
       "*": ["src/*"],
-      "@routes/*": ["src/routes/*"],
+      "@routes": ["src/routes"],
       "@controllers/*": ["src/controllers/*"],
       "@services/*": ["src/services/*"],
       "@middleware/*": ["src/middleware/*"],
+      "@models/*": ["src/models/*"],
       "@helpers/*": ["src/helpers/*"]
     },
   },

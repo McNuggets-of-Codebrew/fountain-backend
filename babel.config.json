@@ -9,9 +9,11 @@
         "@controllers": "./src/controllers",
         "@services": "./src/services",
         "@middleware": "./src/middleware",
+        "@models": "./src/models",
         "@helpers": "./src/helpers"
       }
-    }]
+    }],
+    "babel-plugin-add-import-extension"
   ],
   "sourceMaps": true,
   "targets": {
