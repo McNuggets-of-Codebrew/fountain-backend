@@ -15,4 +15,17 @@ export const getUser: Controller = async (req, res) => {
 
 export const createUser: Controller = async (req, res) => {
   const user = req.body;
+
+  if (
+    !user.username ||
+    !user.name ||
+    !user.email
+  ) {
+    res.status(400).send('Invalid user object provided');
+    return;
+  }
+
+  createNewUser(user)
+    .then(newUser => res.json(newUser))
+    .catch(err => res.status(err.status).send(err.message));
 }
