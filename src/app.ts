@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 
+import '@services/db';
 import routes from '@routes';
 
 // Setup express.
@@ -16,7 +17,7 @@ if (!process.env.PORT) console.warn(`'PORT' environment variable not set. Using 
 else port = parseInt(process.env.PORT);
 
 // Define entry routes.
-app.use('/user', routes.user)
+app.use('/user', routes.user);
 
 // Bundle up the server into a single export.
 const App = () => app.listen(port, () => console.log(`Serving Fountain API requests on port ${port}.`));
