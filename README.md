@@ -8,5 +8,5 @@ $ yarn start
 ## Staging/Production
 Todo: set up deployment pipeline.
 ```shell
-$ npm prod
+$ npm run prod
 ```

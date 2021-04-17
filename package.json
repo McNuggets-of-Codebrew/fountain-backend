@@ -1,6 +1,6 @@
 {
   "name": "fountain-backend",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "NodeJS and Express backend for Fountain.",
   "main": "build/index.js",
   "type": "module",
