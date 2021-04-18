@@ -14,10 +14,12 @@
     "paths": {
       "*": ["src/*", "src/types/*.d.ts"],
       "@routes": ["src/routes"],
+      "@routes/*": ["src/routes/*"],
       "@controllers/*": ["src/controllers/*"],
       "@services/*": ["src/services/*"],
       "@middleware/*": ["src/middleware/*"],
       "@models": ["src/models"],
+      "@models/*": ["src/models/*"],
       "@types": ["src/types"],
       "@helpers/*": ["src/helpers/*"]
     },

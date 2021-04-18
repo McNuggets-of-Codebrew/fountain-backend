@@ -1,4 +1,4 @@
-import { schema as user } from './user';
+import { schema as user } from '@models/user';
 
 export default {
   user
