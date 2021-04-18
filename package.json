@@ -22,7 +22,9 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-openid-connect": "^2.3.1",
-    "mongoose": "^5.12.4"
+    "mongoose": "^5.12.4",
+    "stripe": "^8.144.0",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.14",
@@ -31,6 +33,7 @@
     "@babel/preset-typescript": "^7.13.0",
     "@types/cors": "^2.8.10",
     "@types/node": "^14.14.41",
+    "@types/uuid": "^8.3.0",
     "babel-plugin-add-import-extension": "^1.5.1",
     "babel-plugin-module-resolver": "^4.1.0",
     "concurrently": "^6.0.2",

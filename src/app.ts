@@ -30,6 +30,7 @@ else port = parseInt(process.env.PORT);
 // Define entry routes.
 app.use('/api/user', routes.user);
 app.use('api/auth', routes.auth);
+app.use('api/payment', routes.payment);
 
 // Bundle up the server into a single export.
 const App = () => app.listen(port, () => console.log(`Serving Fountain API requests on port ${port}.`));
